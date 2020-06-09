@@ -20,7 +20,8 @@
   <script>
     const setVisElement = document.querySelector('s-set-vis');
     d3.json('./assets/data1.json')
-      .then(data => setVisElement.data = data);
+      .then(data => setVisElement.data = data)
+      .then(() => setVisElement.statisticsPlotGroups = ['A', 'B', 'C'])
   </script>
 
 </body>

@@ -1,8 +1,20 @@
 :host {
-  display: block;
+  display: flex;
 }
 
 s-parallel-sets {
   width: 60%;
   height: 100%;
+}
+
+#statistics-plot-group-container {
+  display: flex;
+  width: 40%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+#statistics-plot-group-container > s-statistics-plot-group {
+  width: 150px;
 }

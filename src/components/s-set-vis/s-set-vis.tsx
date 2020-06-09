@@ -14,6 +14,7 @@ export class SSetVis {
 
   @Prop() data: any[] = [];
   @Prop() parallelSetsRibbonTension: number = 1;
+  @Prop() statisticsPlotGroups: string[];
 
   connectedCallback() {
     const resizeObserver = new ResizeObserver(entryList => {
@@ -33,6 +34,13 @@ export class SSetVis {
           data={this.data}
           ribbonTension={this.parallelSetsRibbonTension}
         ></s-parallel-sets>
+        <div id="statistics-plot-group-container">
+          {
+            this.statisticsPlotGroups.map(header=>(
+              <s-statistics-plot-group header={header}></s-statistics-plot-group>
+            ))
+          }
+        </div>
       </Host>
     );
   }

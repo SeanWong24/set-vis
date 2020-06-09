@@ -9,6 +9,10 @@ export namespace Components {
     interface SSetVis {
         "data": any[];
         "parallelSetsRibbonTension": number;
+        "statisticsPlotGroups": string[];
+    }
+    interface SStatisticsPlotGroup {
+        "header": string;
     }
 }
 declare global {
@@ -18,17 +22,29 @@ declare global {
         prototype: HTMLSSetVisElement;
         new (): HTMLSSetVisElement;
     };
+    interface HTMLSStatisticsPlotGroupElement extends Components.SStatisticsPlotGroup, HTMLStencilElement {
+    }
+    var HTMLSStatisticsPlotGroupElement: {
+        prototype: HTMLSStatisticsPlotGroupElement;
+        new (): HTMLSStatisticsPlotGroupElement;
+    };
     interface HTMLElementTagNameMap {
         "s-set-vis": HTMLSSetVisElement;
+        "s-statistics-plot-group": HTMLSStatisticsPlotGroupElement;
     }
 }
 declare namespace LocalJSX {
     interface SSetVis {
         "data"?: any[];
         "parallelSetsRibbonTension"?: number;
+        "statisticsPlotGroups"?: string[];
+    }
+    interface SStatisticsPlotGroup {
+        "header"?: string;
     }
     interface IntrinsicElements {
         "s-set-vis": SSetVis;
+        "s-statistics-plot-group": SStatisticsPlotGroup;
     }
 }
 export { LocalJSX as JSX };
@@ -36,6 +52,7 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "s-set-vis": LocalJSX.SSetVis & JSXBase.HTMLAttributes<HTMLSSetVisElement>;
+            "s-statistics-plot-group": LocalJSX.SStatisticsPlotGroup & JSXBase.HTMLAttributes<HTMLSStatisticsPlotGroupElement>;
         }
     }
 }
