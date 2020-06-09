@@ -8,6 +8,7 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface SSetVis {
         "data": any[];
+        "parallelSetsDimensions": string[];
         "parallelSetsRibbonTension": number;
         "statisticsPlotGroups": string[];
     }
@@ -36,6 +37,7 @@ declare global {
 declare namespace LocalJSX {
     interface SSetVis {
         "data"?: any[];
+        "parallelSetsDimensions"?: string[];
         "parallelSetsRibbonTension"?: number;
         "statisticsPlotGroups"?: string[];
     }

@@ -21,6 +21,8 @@
     const setVisElement = document.querySelector('s-set-vis');
     d3.json('./assets/data1.json')
       .then(data => setVisElement.data = data)
+      .then(() => d3.json('./assets/dimensions1.json'))
+      .then(dimensions => setVisElement.parallelSetsDimensions = dimensions)
       .then(() => setVisElement.statisticsPlotGroups = ['A', 'B', 'C'])
   </script>
 

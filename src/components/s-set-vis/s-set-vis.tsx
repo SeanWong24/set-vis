@@ -14,6 +14,7 @@ export class SSetVis {
 
   @Prop() data: any[] = [];
   @Prop() parallelSetsRibbonTension: number = 1;
+  @Prop() parallelSetsDimensions: string[];
   @Prop() statisticsPlotGroups: string[];
 
   connectedCallback() {
@@ -32,6 +33,7 @@ export class SSetVis {
       <Host>
         <s-parallel-sets
           data={this.data}
+          dimensions={this.parallelSetsDimensions}
           ribbonTension={this.parallelSetsRibbonTension}
         ></s-parallel-sets>
         <div id="statistics-plot-group-container">

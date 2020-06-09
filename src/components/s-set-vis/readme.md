@@ -10,6 +10,7 @@
 | Property                    | Attribute                      | Description | Type       | Default     |
 | --------------------------- | ------------------------------ | ----------- | ---------- | ----------- |
 | `data`                      | --                             |             | `any[]`    | `[]`        |
+| `parallelSetsDimensions`    | --                             |             | `string[]` | `undefined` |
 | `parallelSetsRibbonTension` | `parallel-sets-ribbon-tension` |             | `number`   | `1`         |
 | `statisticsPlotGroups`      | --                             |             | `string[]` | `undefined` |
 
