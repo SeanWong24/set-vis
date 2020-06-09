@@ -5,15 +5,23 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { ParallelSetsDataNode, } from "s-vis/dist/types/components/s-parallel-sets/utils";
 export namespace Components {
     interface SSetVis {
         "data": any[];
         "parallelSetsDimensions": string[];
         "parallelSetsRibbonTension": number;
-        "statisticsPlotGroups": string[];
+        "statisticsPlotGroupDefinitions": {
+            dimensionName: string;
+            visType: string;
+        }[];
     }
     interface SStatisticsPlotGroup {
-        "header": string;
+        "data": any[];
+        "dimensionName": string;
+        "headerTextSize": number;
+        "parallelSetsDimensionNodeListMap": Map<string, ParallelSetsDataNode[]>;
+        "visType": string;
     }
 }
 declare global {
@@ -39,10 +47,17 @@ declare namespace LocalJSX {
         "data"?: any[];
         "parallelSetsDimensions"?: string[];
         "parallelSetsRibbonTension"?: number;
-        "statisticsPlotGroups"?: string[];
+        "statisticsPlotGroupDefinitions"?: {
+            dimensionName: string;
+            visType: string;
+        }[];
     }
     interface SStatisticsPlotGroup {
-        "header"?: string;
+        "data"?: any[];
+        "dimensionName"?: string;
+        "headerTextSize"?: number;
+        "parallelSetsDimensionNodeListMap"?: Map<string, ParallelSetsDataNode[]>;
+        "visType"?: string;
     }
     interface IntrinsicElements {
         "s-set-vis": SSetVis;

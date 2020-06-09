@@ -19,11 +19,14 @@
 
   <script>
     const setVisElement = document.querySelector('s-set-vis');
-    d3.json('./assets/data1.json')
+    d3.json('./assets/data2.json')
       .then(data => setVisElement.data = data)
-      .then(() => d3.json('./assets/dimensions1.json'))
+      .then(() => d3.json('./assets/dimensions2.json'))
       .then(dimensions => setVisElement.parallelSetsDimensions = dimensions)
-      .then(() => setVisElement.statisticsPlotGroups = ['A', 'B', 'C'])
+      .then(() => setVisElement.statisticsPlotGroupDefinitions = [
+        { dimensionName: 'Frequency', visType: 'bar' },
+        { dimensionName: 'Frequency', visType: 'box' }
+      ])
   </script>
 
 </body>

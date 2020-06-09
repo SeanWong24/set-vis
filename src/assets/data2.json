@@ -1,0 +1,742 @@
+[
+    {
+        "Size": 43,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 345,
+        "DelitionCount": 129,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 14,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 14,
+            "deletion_count": 0,
+            "end_line": 132,
+            "file": "Conversions/AnyBaseToAnyBase.java",
+            "global_id": 342,
+            "pcid": 665,
+            "start_line": 89
+        }
+    },
+    {
+        "Size": 43,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 389,
+        "DelitionCount": 129,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 14,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 14,
+            "deletion_count": 0,
+            "end_line": 145,
+            "file": "Others/LowestBasePalindrome.java",
+            "global_id": 365,
+            "pcid": 443,
+            "start_line": 102
+        }
+    },
+    {
+        "Size": 9,
+        "Type": 3,
+        "Frequency": 4,
+        "AdditionCount": 13,
+        "DelitionCount": 11,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 17,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 17,
+            "deletion_count": 0,
+            "end_line": 17,
+            "file": "Conversions/HexaDecimalToDecimal.java",
+            "global_id": 1247,
+            "pcid": 666,
+            "start_line": 8
+        }
+    },
+    {
+        "Size": 19,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 3,
+        "DelitionCount": 3,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 3,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 3,
+            "deletion_count": 0,
+            "end_line": 93,
+            "file": "DataStructures/Graphs/Graphs.java",
+            "global_id": 1351,
+            "pcid": 107,
+            "start_line": 74
+        }
+    },
+    {
+        "Size": 10,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 33,
+        "DelitionCount": 30,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 4,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 4,
+            "deletion_count": 0,
+            "end_line": 122,
+            "file": "DataStructures/Graphs/MatrixGraphs.java",
+            "global_id": 1360,
+            "pcid": 125,
+            "start_line": 112
+        }
+    },
+    {
+        "Size": 15,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 31,
+        "DelitionCount": 32,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 5,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 5,
+            "deletion_count": 0,
+            "end_line": 75,
+            "file": "DataStructures/Heaps/MaxHeap.java",
+            "global_id": 1363,
+            "pcid": 223,
+            "start_line": 60
+        }
+    },
+    {
+        "Size": 18,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 37,
+        "DelitionCount": 35,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 6,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 6,
+            "deletion_count": 0,
+            "end_line": 109,
+            "file": "DataStructures/Heaps/MaxHeap.java",
+            "global_id": 1364,
+            "pcid": 226,
+            "start_line": 91
+        }
+    },
+    {
+        "Size": 15,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 31,
+        "DelitionCount": 32,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 5,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 5,
+            "deletion_count": 0,
+            "end_line": 70,
+            "file": "DataStructures/Heaps/MinHeap.java",
+            "global_id": 1365,
+            "pcid": 213,
+            "start_line": 55
+        }
+    },
+    {
+        "Size": 18,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 37,
+        "DelitionCount": 38,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 6,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 6,
+            "deletion_count": 0,
+            "end_line": 104,
+            "file": "DataStructures/Heaps/MinHeap.java",
+            "global_id": 1366,
+            "pcid": 216,
+            "start_line": 86
+        }
+    },
+    {
+        "Size": 9,
+        "Type": 3,
+        "Frequency": 2,
+        "AdditionCount": 2,
+        "DelitionCount": 4,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 2,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 2,
+            "deletion_count": 0,
+            "end_line": 62,
+            "file": "DataStructures/Stacks/StackOfLinkedList.java",
+            "global_id": 1384,
+            "pcid": 13,
+            "start_line": 53
+        }
+    },
+    {
+        "Size": 24,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 21,
+        "DelitionCount": 24,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 8,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 8,
+            "deletion_count": 0,
+            "end_line": 136,
+            "file": "DataStructures/Trees/AVLTree.java",
+            "global_id": 1391,
+            "pcid": 256,
+            "start_line": 112
+        }
+    },
+    {
+        "Size": 24,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 21,
+        "DelitionCount": 24,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 8,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 8,
+            "deletion_count": 0,
+            "end_line": 162,
+            "file": "DataStructures/Trees/AVLTree.java",
+            "global_id": 1392,
+            "pcid": 257,
+            "start_line": 138
+        }
+    },
+    {
+        "Size": 21,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 25,
+        "DelitionCount": 22,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 7,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 7,
+            "deletion_count": 0,
+            "end_line": 47,
+            "file": "DataStructures/Trees/LevelOrderTraversalQueue.java",
+            "global_id": 1402,
+            "pcid": 275,
+            "start_line": 26
+        }
+    },
+    {
+        "Size": 14,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 7,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 7,
+            "deletion_count": 0,
+            "end_line": 120,
+            "file": "DataStructures/Trees/TreeTraversal.java",
+            "global_id": 1408,
+            "pcid": 245,
+            "start_line": 106
+        }
+    },
+    {
+        "Size": 11,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 14,
+        "DelitionCount": 9,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 9,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 9,
+            "deletion_count": 0,
+            "end_line": 53,
+            "file": "DataStructures/Trees/TrieImp.java",
+            "global_id": 1410,
+            "pcid": 269,
+            "start_line": 42
+        }
+    },
+    {
+        "Size": 15,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 15,
+        "DelitionCount": 12,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 9,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 9,
+            "deletion_count": 0,
+            "end_line": 70,
+            "file": "DataStructures/Trees/TrieImp.java",
+            "global_id": 1411,
+            "pcid": 270,
+            "start_line": 55
+        }
+    },
+    {
+        "Size": 28,
+        "Type": 3,
+        "Frequency": 7,
+        "AdditionCount": 19,
+        "DelitionCount": 19,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 11,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 11,
+            "deletion_count": 0,
+            "end_line": 52,
+            "file": "ciphers/Caesar.java",
+            "global_id": 1419,
+            "pcid": 368,
+            "start_line": 24
+        }
+    },
+    {
+        "Size": 25,
+        "Type": 3,
+        "Frequency": 7,
+        "AdditionCount": 19,
+        "DelitionCount": 19,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 11,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 11,
+            "deletion_count": 0,
+            "end_line": 87,
+            "file": "ciphers/Caesar.java",
+            "global_id": 1420,
+            "pcid": 369,
+            "start_line": 62
+        }
+    },
+    {
+        "Size": 21,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 12,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 12,
+            "deletion_count": 0,
+            "end_line": 32,
+            "file": "ciphers/Vigenere.java",
+            "global_id": 1421,
+            "pcid": 385,
+            "start_line": 11
+        }
+    },
+    {
+        "Size": 23,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 12,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 12,
+            "deletion_count": 0,
+            "end_line": 57,
+            "file": "ciphers/Vigenere.java",
+            "global_id": 1422,
+            "pcid": 386,
+            "start_line": 34
+        }
+    },
+    {
+        "Size": 14,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 2,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 2,
+            "deletion_count": 0,
+            "end_line": 27,
+            "file": "DataStructures/HashMap/Hashing/LinkedList.java",
+            "global_id": 1602,
+            "pcid": 77,
+            "start_line": 13
+        }
+    },
+    {
+        "Size": 23,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 72,
+        "DelitionCount": 69,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 10,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 10,
+            "deletion_count": 0,
+            "end_line": 157,
+            "file": "DataStructures/Trees/RedBlackBST.java",
+            "global_id": 1603,
+            "pcid": 322,
+            "start_line": 134
+        }
+    },
+    {
+        "Size": 24,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 72,
+        "DelitionCount": 69,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 10,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 10,
+            "deletion_count": 0,
+            "end_line": 183,
+            "file": "DataStructures/Trees/RedBlackBST.java",
+            "global_id": 1604,
+            "pcid": 323,
+            "start_line": 159
+        }
+    },
+    {
+        "Size": 19,
+        "Type": 3,
+        "Frequency": 3,
+        "AdditionCount": 157,
+        "DelitionCount": 57,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 16,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 16,
+            "deletion_count": 0,
+            "end_line": 73,
+            "file": "Searches/InterpolationSearch.java",
+            "global_id": 1621,
+            "pcid": 641,
+            "start_line": 54
+        }
+    },
+    {
+        "Size": 19,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 16,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 16,
+            "deletion_count": 0,
+            "end_line": 78,
+            "file": "Searches/IterativeBinarySearch.java",
+            "global_id": 1622,
+            "pcid": 648,
+            "start_line": 59
+        }
+    },
+    {
+        "Size": 24,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 16,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 16,
+            "deletion_count": 0,
+            "end_line": 80,
+            "file": "Searches/IterativeTernarySearch.java",
+            "global_id": 1623,
+            "pcid": 646,
+            "start_line": 56
+        }
+    },
+    {
+        "Size": 20,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 16,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 16,
+            "deletion_count": 0,
+            "end_line": 98,
+            "file": "Searches/TernarySearch.java",
+            "global_id": 1624,
+            "pcid": 644,
+            "start_line": 78
+        }
+    },
+    {
+        "Size": 16,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 1,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 1,
+            "deletion_count": 0,
+            "end_line": 35,
+            "file": "DataStructures/Stacks/StackArray.java",
+            "global_id": 1644,
+            "pcid": 1,
+            "start_line": 19
+        }
+    },
+    {
+        "Size": 15,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 1,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 1,
+            "deletion_count": 0,
+            "end_line": 36,
+            "file": "DataStructures/Stacks/StackArrayList.java",
+            "global_id": 1645,
+            "pcid": 38,
+            "start_line": 21
+        }
+    },
+    {
+        "Size": 10,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 17,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 17,
+            "deletion_count": 0,
+            "end_line": 27,
+            "file": "Conversions/HexToOct.java",
+            "global_id": 1678,
+            "pcid": 683,
+            "start_line": 17
+        }
+    },
+    {
+        "Size": 19,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 3,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 3,
+            "deletion_count": 0,
+            "end_line": 65,
+            "file": "DataStructures/Graphs/ConnectedComponent.java",
+            "global_id": 1679,
+            "pcid": 138,
+            "start_line": 46
+        }
+    },
+    {
+        "Size": 11,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 4,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 4,
+            "deletion_count": 0,
+            "end_line": 102,
+            "file": "DataStructures/Graphs/MatrixGraphs.java",
+            "global_id": 1680,
+            "pcid": 124,
+            "start_line": 91
+        }
+    },
+    {
+        "Size": 23,
+        "Type": 3,
+        "Frequency": 1,
+        "AdditionCount": 2,
+        "DelitionCount": 2,
+        "FileCount": 1,
+        "Consistency": "Changed",
+        "Class": 16,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 16,
+            "deletion_count": 0,
+            "end_line": 94,
+            "file": "Searches/BinarySearch.java",
+            "global_id": 1681,
+            "pcid": 655,
+            "start_line": 71
+        }
+    },
+    {
+        "Size": 20,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 13,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 13,
+            "deletion_count": 0,
+            "end_line": 107,
+            "file": "divideconquer/ClosestPair.java",
+            "global_id": 1682,
+            "pcid": 401,
+            "start_line": 87
+        }
+    },
+    {
+        "Size": 20,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 13,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 13,
+            "deletion_count": 0,
+            "end_line": 138,
+            "file": "divideconquer/ClosestPair.java",
+            "global_id": 1683,
+            "pcid": 402,
+            "start_line": 118
+        }
+    },
+    {
+        "Size": 8,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 15,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 15,
+            "deletion_count": 0,
+            "end_line": 25,
+            "file": "Maths/FindMax.java",
+            "global_id": 1684,
+            "pcid": 544,
+            "start_line": 17
+        }
+    },
+    {
+        "Size": 8,
+        "Type": 3,
+        "Frequency": 0,
+        "AdditionCount": 0,
+        "DelitionCount": 0,
+        "FileCount": 1,
+        "Consistency": "Unchanged",
+        "Class": 15,
+        "cloneInLastRevision": {
+            "addition_count": 0,
+            "class_id": 15,
+            "deletion_count": 0,
+            "end_line": 25,
+            "file": "Maths/FindMin.java",
+            "global_id": 1685,
+            "pcid": 538,
+            "start_line": 17
+        }
+    }
+]
