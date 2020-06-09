@@ -12,6 +12,7 @@
 | `data`                             | --                 |             | `any[]`                               | `undefined` |
 | `dimensionName`                    | `dimension-name`   |             | `string`                              | `undefined` |
 | `headerTextSize`                   | `header-text-size` |             | `number`                              | `16`        |
+| `isSelected`                       | `is-selected`      |             | `boolean`                             | `false`     |
 | `parallelSetsColorScheme`          | --                 |             | `string[]`                            | `undefined` |
 | `parallelSetsDimensionNodeListMap` | --                 |             | `Map<string, ParallelSetsDataNode[]>` | `undefined` |
 | `visType`                          | `vis-type`         |             | `string`                              | `undefined` |

@@ -71,6 +71,7 @@ export class SSetVis {
                 visType={definition.visType}
                 parallelSetsDimensionNodeListMap={this.parallelSetsDimensionNodeListMap}
                 parallelSetsColorScheme={this.parallelSetsColorScheme}
+                isSelected={this.parallelSetsLastDimensionSortBy === definition.dimensionName}
                 onHeaderClick={({ detail }) => { this.parallelSetsLastDimensionSortBy = this.parallelSetsLastDimensionSortBy === detail ? undefined : detail }}
               ></s-statistics-plot-group>
             ))

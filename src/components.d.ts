@@ -23,6 +23,7 @@ export namespace Components {
         "data": any[];
         "dimensionName": string;
         "headerTextSize": number;
+        "isSelected": boolean;
         "parallelSetsColorScheme": string[];
         "parallelSetsDimensionNodeListMap": Map<string, ParallelSetsDataNode[]>;
         "visType": string;
@@ -63,6 +64,7 @@ declare namespace LocalJSX {
         "data"?: any[];
         "dimensionName"?: string;
         "headerTextSize"?: number;
+        "isSelected"?: boolean;
         "onHeaderClick"?: (event: CustomEvent<string>) => void;
         "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensionNodeListMap"?: Map<string, ParallelSetsDataNode[]>;

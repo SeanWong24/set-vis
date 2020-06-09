@@ -16,6 +16,7 @@ export class SStatisticsPlotGroup implements ComponentInterface {
   @Prop() parallelSetsDimensionNodeListMap: Map<string, ParallelSetsDataNode[]>;
   @Prop() parallelSetsColorScheme: string[];
   @Prop() headerTextSize: number = 16;
+  @Prop() isSelected: boolean = false;
 
   @Event() headerClick: EventEmitter<string>;
 
@@ -45,7 +46,8 @@ export class SStatisticsPlotGroup implements ComponentInterface {
           style={{
             fontSize: `${this.headerTextSize}px`,
             height: `${this.headerTextSize}px`,
-            cursor: 'pointer'
+            cursor: 'pointer',
+            color: this.isSelected ? 'red' : 'black'
           }}
           onClick={() => { this.headerClick.emit(this.dimensionName) }}
         >{this.dimensionName}</text>
