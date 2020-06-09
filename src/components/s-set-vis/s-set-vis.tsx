@@ -17,7 +17,7 @@ export class SSetVis {
 
   @Prop() data: any[] = [];
   @Prop() parallelSetsRibbonTension: number = 1;
-  @Prop() parallelSetsDimensions: string[];
+  @Prop({ mutable: true }) parallelSetsDimensions: string[];
   @Prop() parallelSetsColorScheme: string[] = [...d3.schemeAccent];
   @Prop() statisticsPlotGroupDefinitions: { dimensionName: string, visType: string }[];
 
@@ -43,6 +43,16 @@ export class SSetVis {
           maxSegmentLimit={5}
           mergedSegmentMaxRatio={.1}
           onVisLoaded={({ detail }) => this.parallelSetsLoadedHandler(detail)}
+          onAxisHeaderClick={({ detail: dimensionName }) => {
+            const currentDimensionIndex = this.parallelSetsDimensions.findIndex(value => value === dimensionName);
+            this.swapItems(this.parallelSetsDimensions, currentDimensionIndex, currentDimensionIndex - 1);
+            this.parallelSetsDimensions = [...this.parallelSetsDimensions];
+          }}
+          onAxisHeaderContextMenu={({ detail: dimensionName }) => {
+            const currentDimensionIndex = this.parallelSetsDimensions.findIndex(value => value === dimensionName);
+            this.swapItems(this.parallelSetsDimensions, currentDimensionIndex, currentDimensionIndex + 1);
+            this.parallelSetsDimensions = [...this.parallelSetsDimensions];
+          }}
         ></s-parallel-sets>
         <div id="statistics-plot-group-container">
           {
@@ -64,6 +74,12 @@ export class SSetVis {
 
   private parallelSetsLoadedHandler(dimensionNodeListMap: Map<string, ParallelSetsDataNode[]>) {
     this.parallelSetsDimensionNodeListMap = dimensionNodeListMap;
+  }
+
+  private swapItems(list: any[], index1: number, index2: number) {
+    if (index1 >= 0 && index1 < list.length && index2 >= 0 && index2 < list.length) {
+      list[index1] = list.splice(index2, 1, list[index1])[0];
+    }
   }
 
 }
