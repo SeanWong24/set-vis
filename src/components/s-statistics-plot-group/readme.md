@@ -17,6 +17,13 @@
 | `visType`                          | `vis-type`         |             | `string`                              | `undefined` |
 
 
+## Events
+
+| Event         | Description | Type                  |
+| ------------- | ----------- | --------------------- |
+| `headerClick` |             | `CustomEvent<string>` |
+
+
 ## Dependencies
 
 ### Used by

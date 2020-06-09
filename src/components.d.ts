@@ -11,6 +11,8 @@ export namespace Components {
         "data": any[];
         "parallelSetsColorScheme": string[];
         "parallelSetsDimensions": string[];
+        "parallelSetsMaxSegmentLimit": number | number[];
+        "parallelSetsMergedSegmentName": string;
         "parallelSetsRibbonTension": number;
         "statisticsPlotGroupDefinitions": {
             dimensionName: string;
@@ -49,6 +51,8 @@ declare namespace LocalJSX {
         "data"?: any[];
         "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensions"?: string[];
+        "parallelSetsMaxSegmentLimit"?: number | number[];
+        "parallelSetsMergedSegmentName"?: string;
         "parallelSetsRibbonTension"?: number;
         "statisticsPlotGroupDefinitions"?: {
             dimensionName: string;
@@ -59,6 +63,7 @@ declare namespace LocalJSX {
         "data"?: any[];
         "dimensionName"?: string;
         "headerTextSize"?: number;
+        "onHeaderClick"?: (event: CustomEvent<string>) => void;
         "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensionNodeListMap"?: Map<string, ParallelSetsDataNode[]>;
         "visType"?: string;

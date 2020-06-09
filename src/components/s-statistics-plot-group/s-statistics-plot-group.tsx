@@ -1,4 +1,4 @@
-import { Component, ComponentInterface, Host, h, Prop } from '@stencil/core';
+import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter } from '@stencil/core';
 import { ParallelSetsDataNode } from 's-vis/dist/types/components/s-parallel-sets/utils';
 import 's-vis';
 import * as d3 from 'd3';
@@ -16,6 +16,8 @@ export class SStatisticsPlotGroup implements ComponentInterface {
   @Prop() parallelSetsDimensionNodeListMap: Map<string, ParallelSetsDataNode[]>;
   @Prop() parallelSetsColorScheme: string[];
   @Prop() headerTextSize: number = 16;
+
+  @Event() headerClick: EventEmitter<string>;
 
   render() {
     const parallelSetsDimensionNodeListMapEntryList = [...this.parallelSetsDimensionNodeListMap];
@@ -42,8 +44,10 @@ export class SStatisticsPlotGroup implements ComponentInterface {
           id="header"
           style={{
             fontSize: `${this.headerTextSize}px`,
-            height: `${this.headerTextSize}px`
+            height: `${this.headerTextSize}px`,
+            cursor: 'pointer'
           }}
+          onClick={() => { this.headerClick.emit(this.dimensionName) }}
         >{this.dimensionName}</text>
         <div
           id="plot-group-container"
