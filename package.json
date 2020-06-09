@@ -24,5 +24,8 @@
   "devDependencies": {
     "@stencil/core": "^1.12.2"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "s-vis": "git+https://github.com/SeanWong24/s-vis.git"
+  }
 }

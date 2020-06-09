@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html dir="ltr" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
@@ -8,10 +9,20 @@
   <script type="module" src="/build/set-vis.esm.js"></script>
   <script nomodule src="/build/set-vis.js"></script>
 
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
 </head>
+
 <body>
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <s-set-vis parallel-sets-ribbon-tension=".6" style="width: 800px; height: 600px;"></s-set-vis>
+
+  <script>
+    const setVisElement = document.querySelector('s-set-vis');
+    d3.json('./assets/data1.json')
+      .then(data => setVisElement.data = data);
+  </script>
 
 </body>
+
 </html>
