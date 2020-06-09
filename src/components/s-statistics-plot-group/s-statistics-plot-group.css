@@ -17,10 +17,12 @@
 
 #plot-group-container > .plot-item-container {
   position: absolute;
-  left: var(--plot-item-margin);
-  width: calc(100% - var(--plot-item-margin) * 2);
+  width: 100%;
 }
 
 #plot-group-container > .plot-item-container > .plot-item {
+  position: absolute;
+  left: var(--plot-item-margin);
+  width: calc(100% - var(--plot-item-margin) * 2);
   height: 20px;
 }

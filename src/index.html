@@ -24,7 +24,7 @@
       .then(() => d3.json('./assets/dimensions2.json'))
       .then(dimensions => setVisElement.parallelSetsDimensions = dimensions)
       .then(() => setVisElement.statisticsPlotGroupDefinitions = [
-        { dimensionName: 'Frequency', visType: 'bar' },
+        { dimensionName: 'AdditionCount', visType: 'bar' },
         { dimensionName: 'Frequency', visType: 'box' }
       ])
   </script>

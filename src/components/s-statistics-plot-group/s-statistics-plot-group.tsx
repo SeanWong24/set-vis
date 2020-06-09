@@ -14,6 +14,7 @@ export class SStatisticsPlotGroup implements ComponentInterface {
   @Prop() data: any[];
   @Prop() visType: string;
   @Prop() parallelSetsDimensionNodeListMap: Map<string, ParallelSetsDataNode[]>;
+  @Prop() parallelSetsColorScheme: string[];
   @Prop() headerTextSize: number = 16;
 
   render() {
@@ -33,6 +34,7 @@ export class SStatisticsPlotGroup implements ComponentInterface {
     }
 
     const allValues = this.data.map(record => record[this.dimensionName]);
+    const colorScale = d3.scaleOrdinal(this.parallelSetsColorScheme);
 
     return (
       <Host>
@@ -57,7 +59,8 @@ export class SStatisticsPlotGroup implements ComponentInterface {
                   class="plot-item-container"
                   style={{
                     top: `${minSegmentPosition * 100}%`,
-                    height: `${(maxSegmentPosition - minSegmentPosition) * 100}%`
+                    height: `${(maxSegmentPosition - minSegmentPosition) * 100}%`,
+                    backgroundColor: colorScale(nodeList[0].dataRecordList[0][this.dimensionName].toString())
                   }}
                 >
                   {this.renderPlotItem(allValues, values)}

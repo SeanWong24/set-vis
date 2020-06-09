@@ -9,6 +9,7 @@ import { ParallelSetsDataNode, } from "s-vis/dist/types/components/s-parallel-se
 export namespace Components {
     interface SSetVis {
         "data": any[];
+        "parallelSetsColorScheme": string[];
         "parallelSetsDimensions": string[];
         "parallelSetsRibbonTension": number;
         "statisticsPlotGroupDefinitions": {
@@ -20,6 +21,7 @@ export namespace Components {
         "data": any[];
         "dimensionName": string;
         "headerTextSize": number;
+        "parallelSetsColorScheme": string[];
         "parallelSetsDimensionNodeListMap": Map<string, ParallelSetsDataNode[]>;
         "visType": string;
     }
@@ -45,6 +47,7 @@ declare global {
 declare namespace LocalJSX {
     interface SSetVis {
         "data"?: any[];
+        "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensions"?: string[];
         "parallelSetsRibbonTension"?: number;
         "statisticsPlotGroupDefinitions"?: {
@@ -56,6 +59,7 @@ declare namespace LocalJSX {
         "data"?: any[];
         "dimensionName"?: string;
         "headerTextSize"?: number;
+        "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensionNodeListMap"?: Map<string, ParallelSetsDataNode[]>;
         "visType"?: string;
     }

@@ -1,6 +1,7 @@
 import { Component, Host, h, Element, Prop, State } from '@stencil/core';
 import 's-vis';
 import { ParallelSetsDataNode } from 's-vis/dist/types/components/s-parallel-sets/utils';
+import * as d3 from 'd3';
 
 @Component({
   tag: 's-set-vis',
@@ -17,6 +18,7 @@ export class SSetVis {
   @Prop() data: any[] = [];
   @Prop() parallelSetsRibbonTension: number = 1;
   @Prop() parallelSetsDimensions: string[];
+  @Prop() parallelSetsColorScheme: string[] = [...d3.schemeAccent];
   @Prop() statisticsPlotGroupDefinitions: { dimensionName: string, visType: string }[];
 
   connectedCallback() {
@@ -36,6 +38,7 @@ export class SSetVis {
         <s-parallel-sets
           data={this.data}
           dimensions={this.parallelSetsDimensions}
+          colorScheme={this.parallelSetsColorScheme}
           ribbonTension={this.parallelSetsRibbonTension}
           maxSegmentLimit={5}
           mergedSegmentMaxRatio={.1}
@@ -50,6 +53,7 @@ export class SSetVis {
                 data={this.data}
                 visType={definition.visType}
                 parallelSetsDimensionNodeListMap={this.parallelSetsDimensionNodeListMap}
+                parallelSetsColorScheme={this.parallelSetsColorScheme}
               ></s-statistics-plot-group>
             ))
           }
