@@ -54,13 +54,26 @@ export class SStatisticsPlotGroup implements ComponentInterface {
               const values = nodeList.flatMap(node => node.dataRecordList.map(record => +record[this.dimensionName]));
               const minSegmentPosition = nodeList[0].adjustedSegmentPosition[0];
               const maxSegmentPosition = nodeList[nodeList.length - 1].adjustedSegmentPosition[1];
+
+              const parallelSetsFirstDimensionValueCountMap = new Map<string | number, number>();
+              for (const node of nodeList) {
+                const value = node.valueHistory[0];
+                const count = parallelSetsFirstDimensionValueCountMap.get(value);
+                if (count) {
+                  parallelSetsFirstDimensionValueCountMap.set(value, count + node.dataRecordList.length);
+                } else {
+                  parallelSetsFirstDimensionValueCountMap.set(value, 0);
+                }
+              }
+              const largestRatioValueOnParallelSetsFirstDimension = [...parallelSetsFirstDimensionValueCountMap].sort(([_, a], [__, b]) => b - a)[0][0];
+
               return (
                 <div
                   class="plot-item-container"
                   style={{
                     top: `${minSegmentPosition * 100}%`,
                     height: `${(maxSegmentPosition - minSegmentPosition) * 100}%`,
-                    backgroundColor: colorScale(nodeList[0].dataRecordList[0][this.dimensionName].toString())
+                    backgroundColor: colorScale(largestRatioValueOnParallelSetsFirstDimension.toString())
                   }}
                 >
                   {this.renderPlotItem(allValues, values)}
