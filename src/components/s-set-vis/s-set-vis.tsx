@@ -49,6 +49,7 @@ export class SSetVis {
           maxSegmentLimit={this.parallelSetsMaxSegmentLimit}
           mergedSegmentName={this.parallelSetsMergedSegmentName}
           mergedSegmentMaxRatio={.1}
+          useTextures={true}
           onVisLoaded={({ detail }) => this.parallelSetsLoadedHandler(detail)}
           onAxisHeaderClick={({ detail: dimensionName }) => {
             const currentDimensionIndex = this.parallelSetsDimensions.findIndex(value => value === dimensionName);
