@@ -37,7 +37,6 @@ export class SSetVis {
 
   render() {
     const parallelSetsDimensionValuesMap = this.generateDimensionValuesMap();
-    debugger
 
     return (
       <Host>
@@ -84,7 +83,7 @@ export class SSetVis {
   }
 
   private parallelSetsLoadedHandler(dimensionNodeListMap: Map<string, ParallelSetsDataNode[]>) {
-    if (JSON.stringify(dimensionNodeListMap) !== JSON.stringify(this.parallelSetsDimensionNodeListMap)) {
+    if (JSON.stringify([...dimensionNodeListMap || []]) !== JSON.stringify([...this.parallelSetsDimensionNodeListMap || []])) {
       this.parallelSetsDimensionNodeListMap = dimensionNodeListMap;
     }
   }
