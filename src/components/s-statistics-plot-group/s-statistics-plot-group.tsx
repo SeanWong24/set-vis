@@ -79,10 +79,15 @@ export class SStatisticsPlotGroup implements ComponentInterface {
                   class="plot-item-container"
                   style={{
                     top: `${minSegmentPosition * 100}%`,
-                    height: `${(maxSegmentPosition - minSegmentPosition) * 100}%`,
-                    backgroundColor: colorScale(largestRatioValueOnParallelSetsFirstDimension.toString())
+                    height: `${(maxSegmentPosition - minSegmentPosition) * 100}%`
                   }}
                 >
+                  <div
+                    class="plot-item-background"
+                    style={{
+                      backgroundColor: colorScale(largestRatioValueOnParallelSetsFirstDimension.toString())
+                    }}
+                  ></div>
                   {this.renderPlotItem(allValues, values)}
                 </div>
               );
