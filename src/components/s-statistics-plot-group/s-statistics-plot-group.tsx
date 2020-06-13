@@ -37,7 +37,8 @@ export class SStatisticsPlotGroup implements ComponentInterface {
     }
 
     const allValues = this.data.map(record => record[this.dimensionName]);
-    const colorScale = d3.scaleOrdinal(this.parallelSetsColorScheme);
+    const colorScale = d3.scaleOrdinal(this.parallelSetsColorScheme)
+      .domain(parallelSetsDimensionNodeListMapEntryList[0][1].map(node => node.valueHistory[0].toString()));;
 
     return (
       <Host>
@@ -68,7 +69,7 @@ export class SStatisticsPlotGroup implements ComponentInterface {
                 if (count) {
                   parallelSetsFirstDimensionValueCountMap.set(value, count + node.dataRecordList.length);
                 } else {
-                  parallelSetsFirstDimensionValueCountMap.set(value, 0);
+                  parallelSetsFirstDimensionValueCountMap.set(value, node.dataRecordList.length);
                 }
               }
               const largestRatioValueOnParallelSetsFirstDimension = [...parallelSetsFirstDimensionValueCountMap].sort(([_, a], [__, b]) => b - a)[0][0];
