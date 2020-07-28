@@ -19,6 +19,7 @@ export class SStatisticsPlotGroup implements ComponentInterface {
   @Prop() isSelected: boolean = false;
 
   @Event() headerClick: EventEmitter<string>;
+  @Event() rowClick: EventEmitter<string | number>;
 
   render() {
     const parallelSetsDimensionNodeListMapEntryList = [...this.parallelSetsDimensionNodeListMap];
@@ -81,6 +82,7 @@ export class SStatisticsPlotGroup implements ComponentInterface {
                     top: `${minSegmentPosition * 100}%`,
                     height: `${(maxSegmentPosition - minSegmentPosition) * 100}%`
                   }}
+                  onClick={() => this.rowClick.emit(nodeList?.[0].valueHistory[nodeList?.[0].valueHistory.length - 1])}
                 >
                   <div
                     class="plot-item-background"
