@@ -66,6 +66,7 @@ declare namespace LocalJSX {
         "headerTextSize"?: number;
         "isSelected"?: boolean;
         "onHeaderClick"?: (event: CustomEvent<string>) => void;
+        "onRowClick"?: (event: CustomEvent<string | number>) => void;
         "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensionNodeListMap"?: Map<string, ParallelSetsDataNode[]>;
         "visType"?: string;
