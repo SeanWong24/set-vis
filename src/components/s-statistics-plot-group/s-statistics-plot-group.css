@@ -17,7 +17,7 @@
 
 #plot-group-container > .plot-item-container {
   position: absolute;
-  width: 100%;
+  width: calc(100% - 5px);
 }
 
 #plot-group-container > .plot-item-container > .plot-item-background {
