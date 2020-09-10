@@ -18,6 +18,8 @@
 #plot-group-container > .plot-item-container {
   position: absolute;
   width: calc(100% - 5px);
+  display: flex;
+  align-items: center;  
 }
 
 #plot-group-container > .plot-item-container > .plot-item-background {
@@ -31,5 +33,6 @@
   position: absolute;
   left: var(--plot-item-margin);
   width: calc(100% - var(--plot-item-margin) * 2);
-  height: 15px;
+  margin-top: -5px;
+  height: 10px;
 }
