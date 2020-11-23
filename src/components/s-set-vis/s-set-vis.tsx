@@ -22,6 +22,7 @@ export class SSetVis {
   @Prop() parallelSetsMaxSegmentLimit: number | number[] = 10;
   @Prop() parallelSetsMergedSegmentName: string = '*Other*';
   @Prop() parallelSetsColorScheme: string[] = [...d3.schemeAccent];
+  @Prop() parallelSetsTexutureDefinitions: string[];
   @Prop() statisticsPlotGroupDefinitions: { dimensionName: string, visType: string }[];
 
   connectedCallback() {
@@ -50,6 +51,7 @@ export class SSetVis {
           mergedSegmentName={this.parallelSetsMergedSegmentName}
           mergedSegmentMaxRatio={.1}
           useTextures={true}
+          textureDefinitions={this.parallelSetsTexutureDefinitions}
           onVisLoaded={({ detail }) => this.parallelSetsLoadedHandler(detail)}
           onAxisHeaderClick={({ detail: dimensionName }) => {
             const currentDimensionIndex = this.parallelSetsDimensions.findIndex(value => value === dimensionName);

@@ -14,6 +14,7 @@ export namespace Components {
         "parallelSetsMaxSegmentLimit": number | number[];
         "parallelSetsMergedSegmentName": string;
         "parallelSetsRibbonTension": number;
+        "parallelSetsTexutureDefinitions": string[];
         "statisticsPlotGroupDefinitions": {
             dimensionName: string;
             visType: string;
@@ -55,6 +56,7 @@ declare namespace LocalJSX {
         "parallelSetsMaxSegmentLimit"?: number | number[];
         "parallelSetsMergedSegmentName"?: string;
         "parallelSetsRibbonTension"?: number;
+        "parallelSetsTexutureDefinitions"?: string[];
         "statisticsPlotGroupDefinitions"?: {
             dimensionName: string;
             visType: string;

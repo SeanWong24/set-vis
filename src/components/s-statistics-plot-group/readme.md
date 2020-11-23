@@ -20,9 +20,10 @@
 
 ## Events
 
-| Event         | Description | Type                  |
-| ------------- | ----------- | --------------------- |
-| `headerClick` |             | `CustomEvent<string>` |
+| Event         | Description | Type                            |
+| ------------- | ----------- | ------------------------------- |
+| `headerClick` |             | `CustomEvent<string>`           |
+| `rowClick`    |             | `CustomEvent<number \| string>` |
 
 
 ## Dependencies
