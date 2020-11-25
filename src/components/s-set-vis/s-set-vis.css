@@ -3,13 +3,13 @@
 }
 
 s-parallel-sets {
-  width: 60%;
+  min-width: 60%;
   height: 100%;
 }
 
 #statistics-plot-group-container {
   display: flex;
-  width: 40%;
+  width: auto;
   height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
