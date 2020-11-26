@@ -34,8 +34,8 @@
 
 ### Depends on
 
-- s-bar
-- s-box
+- [s-bar](../s-bar)
+- [s-box](../s-box)
 
 ### Graph
 ```mermaid

@@ -1,6 +1,5 @@
 import { Component, ComponentInterface, Host, h, Prop, Event, EventEmitter } from '@stencil/core';
-import { ParallelSetsDataNode } from 's-vis/dist/types/components/s-parallel-sets/utils';
-import 's-vis';
+import { ParallelSetsDataNode } from '../s-parallel-sets/utils';
 import * as d3 from 'd3';
 
 @Component({

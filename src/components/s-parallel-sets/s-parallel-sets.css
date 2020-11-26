@@ -1,0 +1,64 @@
+:host {
+  display: block;
+  width: 100%;
+  height: 100%;
+  
+  --axis-text-font-size: 1em;
+  --ribbon-highlight-opacity: .8;
+}
+
+#main-container {
+  width: 100%;
+  height: 100%;
+}
+
+#context-menu-container {
+  display: block;
+  position: fixed;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: lightgrey;
+  opacity: .8;
+  min-width: 100px;
+}
+
+#context-menu-container {
+  z-index: 1;
+}
+
+#context-menu-container > ul {
+  margin: 0;
+  padding: 0;
+}
+
+#context-menu-container > ul > li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+#context-menu-container > ul > li:hover {
+  background-color: grey;
+}
+
+.axis-header-text {
+  cursor: pointer;
+}
+
+.axis-box {
+  cursor: pointer;
+}
+
+.axis-box :hover {
+  opacity: .5;
+}
+
+.axis-text {
+  font-size: var(--axis-text-font-size);
+  pointer-events: none;
+}
+
+.ribbon-highlight {
+  opacity: var(--ribbon-highlight-opacity);
+}

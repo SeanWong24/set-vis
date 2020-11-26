@@ -23,7 +23,7 @@
 
 ### Depends on
 
-- s-parallel-sets
+- [s-parallel-sets](../s-parallel-sets)
 - [s-statistics-plot-group](../s-statistics-plot-group)
 
 ### Graph

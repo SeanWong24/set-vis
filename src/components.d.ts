@@ -5,8 +5,56 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { ParallelSetsDataNode, } from "s-vis/dist/types/components/s-parallel-sets/utils";
+import { ParallelSetsDataNode, ParallelSetsDataRecord, } from "./components/s-parallel-sets/utils";
 export namespace Components {
+    interface SBar {
+        "exceedMaxLineStroke": string;
+        "fill": string;
+        "maxValue": number;
+        "minValue": number;
+        "orientation": "horizontal" | "vertical";
+        "secondLevelFill": string;
+        "secondLevelMaxValue": number;
+        "thirdLevelFill": string;
+        "thirdLevelMaxValue": number;
+        "value": number;
+    }
+    interface SBox {
+        "boxFill": string;
+        "boxStroke": string;
+        "connectionLineStroke": string;
+        "maxLineStroke": string;
+        "medianLineStroke": string;
+        "minLineStroke": string;
+        "orientation": "horizontal" | "vertical";
+        "scaleMaxValue": number;
+        "scaleMinValue": number;
+        "values": number[] | string;
+    }
+    interface SParallelSets {
+        "axisBoxFill": string;
+        "axisBoxWidth": number;
+        "axisHeaderTextColor": string;
+        "axisHeaderTextSize": number;
+        "axisHeaderTextWeight": string;
+        "axisSegmentTextColor": string;
+        "axisStrokeWidth": number;
+        "colorScheme": string[];
+        "data": ParallelSetsDataRecord[];
+        "dimensionValuesMap": Map<string, (string | number)[]>;
+        "dimensions": string[];
+        "maxSegmentLimit": number | number[];
+        "maxSegmentMarginRatioAllowed": number;
+        "mergedSegmentMaxRatio": number;
+        "mergedSegmentName": string;
+        "minimumRatioToShowAxisText": number;
+        "ribbonHighlightOpacity": number;
+        "ribbonOpacity": number;
+        "ribbonTension": number;
+        "sideMargin": number;
+        "textureDefinitions": string[];
+        "useTextures": boolean;
+    }
     interface SSetVis {
         "data": any[];
         "parallelSetsColorScheme": string[];
@@ -31,6 +79,24 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLSBarElement extends Components.SBar, HTMLStencilElement {
+    }
+    var HTMLSBarElement: {
+        prototype: HTMLSBarElement;
+        new (): HTMLSBarElement;
+    };
+    interface HTMLSBoxElement extends Components.SBox, HTMLStencilElement {
+    }
+    var HTMLSBoxElement: {
+        prototype: HTMLSBoxElement;
+        new (): HTMLSBoxElement;
+    };
+    interface HTMLSParallelSetsElement extends Components.SParallelSets, HTMLStencilElement {
+    }
+    var HTMLSParallelSetsElement: {
+        prototype: HTMLSParallelSetsElement;
+        new (): HTMLSParallelSetsElement;
+    };
     interface HTMLSSetVisElement extends Components.SSetVis, HTMLStencilElement {
     }
     var HTMLSSetVisElement: {
@@ -44,11 +110,67 @@ declare global {
         new (): HTMLSStatisticsPlotGroupElement;
     };
     interface HTMLElementTagNameMap {
+        "s-bar": HTMLSBarElement;
+        "s-box": HTMLSBoxElement;
+        "s-parallel-sets": HTMLSParallelSetsElement;
         "s-set-vis": HTMLSSetVisElement;
         "s-statistics-plot-group": HTMLSStatisticsPlotGroupElement;
     }
 }
 declare namespace LocalJSX {
+    interface SBar {
+        "exceedMaxLineStroke"?: string;
+        "fill"?: string;
+        "maxValue"?: number;
+        "minValue"?: number;
+        "orientation"?: "horizontal" | "vertical";
+        "secondLevelFill"?: string;
+        "secondLevelMaxValue"?: number;
+        "thirdLevelFill"?: string;
+        "thirdLevelMaxValue"?: number;
+        "value"?: number;
+    }
+    interface SBox {
+        "boxFill"?: string;
+        "boxStroke"?: string;
+        "connectionLineStroke"?: string;
+        "maxLineStroke"?: string;
+        "medianLineStroke"?: string;
+        "minLineStroke"?: string;
+        "orientation"?: "horizontal" | "vertical";
+        "scaleMaxValue"?: number;
+        "scaleMinValue"?: number;
+        "values"?: number[] | string;
+    }
+    interface SParallelSets {
+        "axisBoxFill"?: string;
+        "axisBoxWidth"?: number;
+        "axisHeaderTextColor"?: string;
+        "axisHeaderTextSize"?: number;
+        "axisHeaderTextWeight"?: string;
+        "axisSegmentTextColor"?: string;
+        "axisStrokeWidth"?: number;
+        "colorScheme"?: string[];
+        "data"?: ParallelSetsDataRecord[];
+        "dimensionValuesMap"?: Map<string, (string | number)[]>;
+        "dimensions"?: string[];
+        "maxSegmentLimit"?: number | number[];
+        "maxSegmentMarginRatioAllowed"?: number;
+        "mergedSegmentMaxRatio"?: number;
+        "mergedSegmentName"?: string;
+        "minimumRatioToShowAxisText"?: number;
+        "onAxisHeaderClick"?: (event: CustomEvent<string>) => void;
+        "onAxisHeaderContextMenu"?: (event: CustomEvent<string>) => void;
+        "onAxisSegmentClick"?: (event: CustomEvent<ParallelSetsDataNode[]>) => void;
+        "onRibbonClick"?: (event: CustomEvent<ParallelSetsDataNode>) => void;
+        "onVisLoaded"?: (event: CustomEvent<Map<string, ParallelSetsDataNode[]>>) => void;
+        "ribbonHighlightOpacity"?: number;
+        "ribbonOpacity"?: number;
+        "ribbonTension"?: number;
+        "sideMargin"?: number;
+        "textureDefinitions"?: string[];
+        "useTextures"?: boolean;
+    }
     interface SSetVis {
         "data"?: any[];
         "parallelSetsColorScheme"?: string[];
@@ -74,6 +196,9 @@ declare namespace LocalJSX {
         "visType"?: string;
     }
     interface IntrinsicElements {
+        "s-bar": SBar;
+        "s-box": SBox;
+        "s-parallel-sets": SParallelSets;
         "s-set-vis": SSetVis;
         "s-statistics-plot-group": SStatisticsPlotGroup;
     }
@@ -82,6 +207,9 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "s-bar": LocalJSX.SBar & JSXBase.HTMLAttributes<HTMLSBarElement>;
+            "s-box": LocalJSX.SBox & JSXBase.HTMLAttributes<HTMLSBoxElement>;
+            "s-parallel-sets": LocalJSX.SParallelSets & JSXBase.HTMLAttributes<HTMLSParallelSetsElement>;
             "s-set-vis": LocalJSX.SSetVis & JSXBase.HTMLAttributes<HTMLSSetVisElement>;
             "s-statistics-plot-group": LocalJSX.SStatisticsPlotGroup & JSXBase.HTMLAttributes<HTMLSStatisticsPlotGroupElement>;
         }
