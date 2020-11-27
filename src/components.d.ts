@@ -56,6 +56,7 @@ export namespace Components {
         "useTextures": boolean;
     }
     interface SSetVis {
+        "darkMode": boolean;
         "data": any[];
         "parallelSetsColorScheme": string[];
         "parallelSetsDimensions": string[];
@@ -169,6 +170,7 @@ declare namespace LocalJSX {
         "useTextures"?: boolean;
     }
     interface SSetVis {
+        "darkMode"?: boolean;
         "data"?: any[];
         "parallelSetsColorScheme"?: string[];
         "parallelSetsDimensions"?: string[];

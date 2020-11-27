@@ -23,6 +23,7 @@ export class SSetVis {
   @Prop() parallelSetsColorScheme: string[] = [...d3.schemeAccent];
   @Prop() parallelSetsTexutureDefinitions: string[];
   @Prop() statisticsPlotGroupDefinitions: { dimensionName: string, visType: string }[];
+  @Prop() darkMode: boolean = false;
 
   connectedCallback() {
     const resizeObserver = new ResizeObserver(entryList => {
@@ -62,6 +63,8 @@ export class SSetVis {
             this.swapItems(this.parallelSetsDimensions, currentDimensionIndex, currentDimensionIndex + 1);
             this.parallelSetsDimensions = [...this.parallelSetsDimensions];
           }}
+          axisHeaderTextColor={this.darkMode ? 'white' : 'black'}
+          axisSegmentTextColor={this.darkMode ? 'white' : 'black'}
         ></s-parallel-sets>
         <div id="statistics-plot-group-container">
           {

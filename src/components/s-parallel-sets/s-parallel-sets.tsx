@@ -248,7 +248,7 @@ export class SParallelSets implements ComponentInterface {
             y={currentSegmentPosition[0] * height}
             text-anchor="start"
             writing-mode="tb"
-            color={this.axisSegmentTextColor}
+            fill={this.axisSegmentTextColor}
           >{currentSegmentValue}</text> :
           undefined;
         return { line, box, text };
