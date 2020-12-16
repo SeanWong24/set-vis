@@ -72,6 +72,10 @@ export class SStatisticsPlotGroup implements ComponentInterface {
                   parallelSetsFirstDimensionValueCountMap.set(value, node.dataRecordList.length);
                 }
               }
+              const totalCount = [...parallelSetsFirstDimensionValueCountMap].reduce((result, [_, value]) => result + value, 0);
+              let newMap = [...parallelSetsFirstDimensionValueCountMap].reduce((map, [key, value]) => (map.set(key, value / totalCount * 100), map), new Map<string | number, number>());
+              debugger
+              newMap = new Map([...newMap].map(([key, value], i, entries) => ([key, i === 0 ? value / 2 : value + (entries[i - 1]?.[1] || 0)])));
               const largestRatioValueOnParallelSetsFirstDimension = [...parallelSetsFirstDimensionValueCountMap].sort(([_, a], [__, b]) => b - a)[0][0];
 
               return (
@@ -86,7 +90,8 @@ export class SStatisticsPlotGroup implements ComponentInterface {
                   <div
                     class="plot-item-background"
                     style={{
-                      backgroundColor: colorScale(largestRatioValueOnParallelSetsFirstDimension.toString())
+                      backgroundColor: colorScale(largestRatioValueOnParallelSetsFirstDimension.toString()),
+                      backgroundImage: `linear-gradient(to right, ${[...newMap].map(([key, value]) => `${colorScale(key.toString())} ${value}%`).join(', ')})`
                     }}
                   ></div>
                   {this.renderPlotItem(allValues, values)}
