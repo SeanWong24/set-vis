@@ -114,7 +114,7 @@ export class SSetVis {
         sortedValueList = [...valueDataRecordListMap]
           .map(([value, dataRecordList]) => [
             value,
-            d3.mean(dataRecordList.map(dataRecord => +dataRecord[this.parallelSetsLastDimensionSortBy]))
+            d3.median(dataRecordList.map(dataRecord => +dataRecord[this.parallelSetsLastDimensionSortBy]))
           ] as [string | number, number])
           .sort(([_, a], [__, b]) => b - a)
           .map(([value]) => value);
