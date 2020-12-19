@@ -517,7 +517,7 @@ export class SParallelSets implements ComponentInterface {
               return a - (b as number);
             case 'string':
               // TODO this a a temp solution and should be removed later
-              if (a.match(/[1-9] ~ [1-9]/)) {
+              if (a.split(' ~ ')[0]) {
                 return +a.split(' ~ ')[0] - +(b as string).split(' ~ ')[0];
               }
               return compareStrings(a, b as string);
